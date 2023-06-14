@@ -1,16 +1,16 @@
-import oca.A;
-
-import java.util.ArrayList;
-
 public class Main {
     public static void main(String[] args) {
 
-        String text = "JavaProgramming";
-                    // 012345678910
-        System.out.println(text.substring(1,6));
-
-
-
+        System.out.print("a");
+        try{
+            System.out.print("b");
+            throw new IllegalArgumentException();
+        }catch (RuntimeException e){
+            System.out.print("c");
+        }finally {
+            System.out.print("d");
+        }
+        System.out.print("e");
     }
-
 }
+//abcde
