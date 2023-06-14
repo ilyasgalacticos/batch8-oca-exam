@@ -1,16 +1,15 @@
 public class Main {
     public static void main(String[] args) {
 
-        System.out.print("a");
-        try{
-            System.out.print("b");
-            throw new IllegalArgumentException();
-        }catch (RuntimeException e){
-            System.out.print("c");
-        }finally {
-            System.out.print("d");
+        int x = 3;
+        if (x > 5) {
+            System.out.println("YES");
+        } else {
+            System.out.println("NO");
         }
-        System.out.print("e");
+
+        System.out.println((x > 5 ? "YES" : "NO"));
+
     }
 }
 //abcde
