@@ -1,15 +1,10 @@
+import oca.MyException;
+import oca.shapes.Rectangle;
+
+import java.util.ArrayList;
+
 public class Main {
-    public static void main(String[] args) {
-
-        int x = 3;
-        if (x > 5) {
-            System.out.println("YES");
-        } else {
-            System.out.println("NO");
-        }
-
-        System.out.println((x > 5 ? "YES" : "NO"));
-
+    protected static String doA2(){
+        return "a2";
     }
 }
-//abcde
